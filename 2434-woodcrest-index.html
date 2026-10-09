@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2434 Woodcrest Drive · East Stroudsburg</title>
+<meta name="description" content="Turnkey Pocono retreat with private pool, chef’s kitchen, and speakeasy bonus room. 4 beds · 2.5 baths · 2,594 sq ft. $449,999. Listed by Olivia M. Cipollo, RE/MAX Crossroads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #142018;
+  --paper: #f4f1ea;
+  --gold: #c4a574;
+  --band: #101612;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--paper); color: var(--ink); }
+body { font-family: Outfit, sans-serif; font-weight: 400; line-height: 1.45; }
+img { width: 100%; display: block; }
+.hero {
+  position: relative;
+  min-height: 100svh;
+  background: #101612 center/cover no-repeat;
+  background-image: url('hero-pool.jpg');
+  display: flex;
+  align-items: flex-end;
+}
+.hero .veil {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(8,12,10,.88) 0%, rgba(8,12,10,.28) 55%, rgba(8,12,10,.15) 100%);
+}
+.hero .copy {
+  position: relative; z-index: 1;
+  padding: 28px 22px 36px;
+  max-width: 720px;
+  color: #f6f3ec;
+}
+.kicker {
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--gold);
+  margin: 0 0 14px;
+}
+h1, h2 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  margin: 0;
+}
+h1 {
+  font-size: clamp(38px, 7.5vw, 64px);
+  line-height: .98;
+}
+.price {
+  font-family: "Libre Baskerville", serif;
+  font-size: clamp(28px, 5vw, 40px);
+  margin: 18px 0 0;
+}
+.strip {
+  background: var(--band);
+  color: #f6f3ec;
+  padding: 28px 22px 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 16px;
+}
+.strip b {
+  display: block;
+  font-family: "Libre Baskerville", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+.strip span {
+  display: block;
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+.strip .wide { grid-column: 1 / -1; }
+section { padding: 36px 22px; max-width: 820px; }
+h2 {
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+p { font-size: 18px; margin: 0 0 12px; }
+.photo {
+  margin: 22px -22px 0;
+  max-width: none;
+}
+.photo img { width: 100%; display: block; }
+.dark {
+  background: var(--band);
+  color: #f6f3ec;
+  max-width: none;
+}
+.dark .inner, .cta .inner { max-width: 820px; margin: 0 auto; padding: 0 22px; }
+.rows { margin-top: 22px; }
+.rows div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid rgba(244,241,234,.18);
+  padding: 14px 0;
+  font-size: 16px;
+}
+.rows b { font-weight: 500; }
+@media (max-width: 480px) {
+  .rows div { flex-direction: column; gap: 4px; }
+  .rows span { text-align: left; font-size: 14px; }
+}
+.cta a {
+  display: inline-block;
+  margin-top: 18px;
+  background: var(--gold);
+  color: #142018;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+.note {
+  font-size: 13px;
+  color: #8d8678;
+  padding: 8px 22px 28px;
+}
+.badge {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  margin-bottom: 16px;
+}
+.trivia-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+@media (min-width: 640px) {
+  .trivia-grid { grid-template-columns: repeat(3, 1fr); }
+}
+.trivia-card {
+  background: #fff;
+  border: 1px solid rgba(20,32,24,.1);
+  padding: 22px 18px;
+  border-radius: 4px;
+}
+.trivia-card h3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.trivia-card p {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #4a544e;
+  margin: 0;
+}
+.weather-box {
+  background: #0d130f;
+  border: 1px solid rgba(196,165,116,.25);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+.weather-header {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(244,241,234,.12);
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.weather-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+.weather-frame img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  object-fit: cover;
+}
+.weather-footer {
+  padding: 10px 16px;
+  font-size: 12px;
+  color: #8d8678;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.weather-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="veil"></div>
+  <div class="copy">
+    <p class="kicker">East Stroudsburg · 18302</p>
+    <h1>The kitchen is open.<br>The door behind the bookcase is not.</h1>
+    <p class="price">$449,999</p>
+  </div>
+</header>
+
+<div class="strip">
+  <div><b>0.36</b><span>Acres · corner lot</span></div>
+  <div><b>2,594</b><span>Square feet</span></div>
+  <div><b>4</b><span>Bedrooms</span></div>
+  <div><b>2.5</b><span>Baths</span></div>
+  <div><b>1990</b><span>Split-level · updated</span></div>
+  <div><b>Pool</b><span>Private · fenced</span></div>
+  <div class="wide"><b>$4,985</b><span>Taxes in 2025</span></div>
+</div>
+
+<section>
+  <p class="kicker">The setting</p>
+  <h2>A retreat on the corner.</h2>
+  <p>Private corner lot in Lake of the Pines. In-ground pool. Wrap-around rear deck. Mature trees. Community lake, beach, clubhouse, and courts — and short-term rentals now permitted.</p>
+  <div class="photo">
+    <img src="house-front.jpg" alt="2434 Woodcrest Drive exterior">
+  </div>
+</section>
+
+<section>
+  <p class="kicker">The house</p>
+  <h2>Upstairs to cook. Downstairs to disappear.</h2>
+  <p>Chef’s kitchen with granite, center island, stainless appliances, and pantry. Lower level finished with family room, wet bar, and a speakeasy-style bonus room — complete with a motion-sensor hidden door behind the bookcase. Attached two-car garage and a large detached shed.</p>
+  <div class="photo">
+    <img src="kitchen.jpg" alt="Chef’s kitchen at 2434 Woodcrest Drive">
+  </div>
+</section>
+
+<section class="dark">
+  <div class="inner">
+    <p class="kicker" style="color:var(--gold)">Already in place</p>
+    <h2>What you get on day one.</h2>
+    <div class="rows">
+      <div><b>Entertainment</b><span>Private fenced pool · rear deck</span></div>
+      <div><b>The Speakeasy</b><span>Wet bar · hidden bookcase door</span></div>
+      <div><b>Kitchen</b><span>Granite · island · stainless</span></div>
+      <div><b>Storage</b><span>2-car garage · large shed</span></div>
+      <div><b>Community</b><span>Lake · beach · courts · clubhouse</span></div>
+      <div><b>Location</b><span>Middle Smithfield · East Stroudsburg</span></div>
+    </div>
+    <div class="photo" style="margin-top:28px;margin-left:0;margin-right:0;">
+      <img src="pool-deck.jpg" alt="Private in-ground pool and deck">
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="kicker">The place</p>
+  <h2>Lake of the Pines.</h2>
+  <p>East Stroudsburg Area schools. A quiet mountain enclave with its own private lake, beach, outdoor pool, basketball and tennis courts, and playground. Close to shopping, golf, skiing, and the Gap.</p>
+</section>
+
+<section>
+  <p class="kicker">Before you become a local</p>
+  <h2>A little lore. A few useful facts.</h2>
+  <p>There’s more to moving than square footage. Here is what to know about the ground under 2434 Woodcrest Drive.</p>
+  <div class="trivia-grid">
+    <div class="trivia-card">
+      <p class="kicker" style="margin-bottom:6px;">Geography</p>
+      <h3>East Stroudsburg on the envelope.</h3>
+      <p>Postal address says East Stroudsburg. The ground sits in <strong>Middle Smithfield Township</strong>—established 1794, decades before Monroe County itself was formed.</p>
+    </div>
+    <div class="trivia-card">
+      <p class="kicker" style="margin-bottom:6px;">Commuter Lore</p>
+      <h3>The $1 train stop.</h3>
+      <p>In 1854, local landowner Robert Brown deeded railroad right-of-way for exactly one dollar—on the condition that passenger trains always stopped here. The city link buyers still rely on started with that deal.</p>
+    </div>
+    <div class="trivia-card">
+      <p class="kicker" style="margin-bottom:6px;">Mountain Living Tip</p>
+      <h3>The dual pool advantage.</h3>
+      <p>Your own private backyard pool for quiet days. The community lake, beach, and club when you want to host. Short-term rentals are now permitted in the community.</p>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="inner">
+    <p class="kicker" style="color:var(--gold)">The weather</p>
+    <h2>Middle Smithfield on the loop.</h2>
+    <p>Mount Holly radar. The Poconos sit on this station. A showing is better when you can see what is coming over the ridge.</p>
+    <div class="weather-box">
+      <div class="weather-header">
+        <span>Live Storm Radar · Monroe County</span>
+        <span>Station KDIX</span>
+      </div>
+      <div class="weather-frame">
+        <img src="https://radar.weather.gov/ridge/standard/KDIX_loop.gif" alt="Live Mount Holly KDIX storm radar for Monroe County" loading="lazy">
+      </div>
+      <div class="weather-footer">
+        <span>National Weather Service</span>
+        <a href="https://forecast.weather.gov/MapClick.php?lat=41.0006&lon=-75.181" target="_blank" rel="noopener">East Stroudsburg 7-Day Forecast →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark cta">
+  <div class="inner">
+    <span class="badge">Private showing</span>
+    <h2>Walk the pool deck. Find the hidden door. Step into the life you want.</h2>
+    <p>Olivia M. Cipollo, RE/MAX Crossroads. 815 Seven Bridge Road, East Stroudsburg.</p>
+    <a href="tel:5704248850">Call 570-424-8850</a>
+  </div>
+</section>
+
+<p class="note">2434 Woodcrest Drive · East Stroudsburg · Middle Smithfield Township · MLS PM-145195 · Listed by Olivia M. Cipollo, RE/MAX Crossroads. Concept page only — not an official brokerage campaign. Listing photos and rights remain with the listing office. Verified active at $449,999 as of October 8, 2026. Final public use controlled by the listing broker.</p>
+
+</body>
+</html>
